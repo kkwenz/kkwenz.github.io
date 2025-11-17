@@ -16,13 +16,13 @@
   body,td,th {
     /* font-family: 'Titillium Web', Verdana, Helvetica, sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.5;
   }
   heading {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 800;
   }
   strong {
@@ -89,9 +89,9 @@ function toggleAbstract(id) {
   </p>
 
   <tr>
-    <td width="35%" valign="top"><a href="images/wen.jpg"><img src="images/wen.jpg" width="100%" style="border-radius:15px"></a>
+    <td width="34%" valign="top"><a href="images/wen.jpg"><img src="images/wen.jpg" width="100%" style="border-radius:0; margin-top:8px; margin-left:8px;"></a>
         <p align=center>
-          <a href="data/Wen_Zhang_CV.pdf">CV</a> /
+          <a href="https://drive.google.com/file/d/1eFJL_ZQcJybAEVkya3uhYCYPZvP4wR-e/view?usp=sharing">CV</a> /
           <a href="https://scholar.google.com/citations?user=_foUdjYAAAAJ&hl=en">Google Scholar</a> /
           <a href="https://github.com/kkwenz">Github</a> /
           <a href="https://www.linkedin.com/in/wen-zhang-kelsey/">LinkedIn</a>
@@ -100,10 +100,10 @@ function toggleAbstract(id) {
 
     <td width="66%" valign="top" align="justify">
         <p>
-          Hi there 👋. I work as a Research Assistant in the Department of Radiology, 
+          Hi there 👋. I am a Research Assistant in the Department of Radiology, 
           School of Medicine, at Johns Hopkins University, advised by Prof.
           <a href="https://scholar.google.com/citations?user=r8kbMWsAAAAJ&hl=en">Andreia Faria</a>. 
-          I am also a Research Intern at Stony Brook University, working with Prof. 
+          I also work as a Research Intern at Stony Brook University, working with Prof. 
           <a href="https://chenyuyou.me/">Chenyu You</a>.
         <p>
         I received my M.S.E. in Biomedical Engineering from Johns Hopkins University in 2025 
@@ -135,8 +135,8 @@ function toggleAbstract(id) {
             advance disease understanding and clinical decision-making?
           </li>
           <li> 
-            How can foundation models be adapted to learn from multisensory 
-            biomedical data to enable scalable and reliable health intelligence?
+            How can foundation models be adapted to integrate 
+            biomedical data to enable scalable, reliable health intelligence?
           </li>
           <li> 
             How can AI serve as a catalyst for scientific discovery
@@ -150,7 +150,9 @@ function toggleAbstract(id) {
   <tr><td>
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     <ul>
-      <li> [05/2025] I received my M.S.E in Biomedical Engineering from Johns Hopkins University! </li>
+      <li>[2025.11] Excited to have organized this year's NEXUS Fair Principles of Open Science Symposium!</li>
+      <li>[2025.05] I received my M.S.E in Biomedical Engineering from Johns Hopkins University!</li>
+      <li>[2024.07] One paper was acccepted at Carbohydrate Polymers (Impact Factor 12.5).</li>
     </ul>
   </td></tr>
 </table>
@@ -166,27 +168,27 @@ function toggleAbstract(id) {
 <table width="960" align="center" border="0" cellspacing="0" cellpadding="15">
 
   <tr>
-    <td width="40%" valign="top" align="center">
+    <td width="15%" valign="top" align="center">
       <a href="#">
-        <img src="images/sprout.png" alt="sym" width="400" height="200" style="border-radius:15px">
+        <img src="images/sprout.png" alt="sym" width="240" height="120" style="border-radius:0; margin-top:6px; margin-left:8px;">
       </a>
     </td>
 
-    <td width="50%" valign="top" class="paper-block">
-      <p>
+    <td width="85%" valign="top" class="paper-block">
         <a href="#">
-          <heading>SPROUT: Training-free Nuclear Instance Segmentation with Automatic Prompting</heading>
+          <heading>Supervise Less, See More: Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting</heading>
         </a><br>
 
-        <span class="authors" style="display:block; margin-top:10px;">
+        <span class="authors" style="display:block; margin-top:8px;font-size:14px;">
           <b>Wen Zhang</b>,
           Qin Ren,
           Wenjing Liu,
           Haibin Ling,
           Chenyu You
         </span>
-        <em>arXiv</em>
-      </p>
+        <span style="font-size:14px;">
+          arXiv
+        </span>
 
       <div class="paper" id="sprout">
         <span class="paper-links" >
@@ -196,18 +198,18 @@ function toggleAbstract(id) {
         </span>
 
         <p id="sprout_ab" align="justify" style="display:none; margin-top:6px;">
-        Nuclear instance segmentation is a cornerstone task in digital pathology, 
-        with broad potential to drive clinical decision-making and accelerate therapeutic discovery. 
-        Recent advances in large vision foundation models have shown promise for zero-shot segmentation in biomedical domains. 
-        However, most efforts in pathology still rely on pre-trained vision models through fine-tuning or adapter modules. 
-        These approaches demand costly annotations and heavy computation, leaving efficient training-free methods largely unexplored.
-        To this end, we propose SPROUT, a simple yet effective framework for annotation-free prompting. 
-        Specifically, we leverage histology-informed stain priors to construct slide-specific references 
-        for mitigating domain gaps and instantiate a prototype-guided partial optimal transport scheme to progressively refine nuclear representations. 
-        In addition, we embed high-quality positive and negative prompts into the Segment Anything Model (SAM) without any fine-tuning.
-        Extensive experiments across multiple histopathology benchmark datasets demonstrate that SPROUT achieves competitive performance
-        while requiring neither annotations nor retraining. These results establish SPROUT as a scalable, 
-        training-free solution for nuclear instance segmentation in computational pathology. 
+          Accurate nuclear instance segmentation is a pivotal task in computational pathology, 
+          supporting data-driven clinical insights and facilitating downstream translational applications. 
+          While large vision foundation models have shown promise for zero-shot biomedical segmentation, 
+          most existing approaches still depend on dense supervision and computationally expensive fine-tuning. 
+          Consequently, training-free methods present a compelling research direction, yet remain largely unexplored. 
+          In this work, we introduce \textbf{SPROUT}, a fully training- and annotation-free prompting framework for nuclear instance segmentation. 
+          SPROUT leverages histology-informed priors to construct slide-specific reference prototypes that mitigate domain gaps. 
+          These prototypes progressively guide feature alignment through a partial optimal transport scheme. 
+          The resulting foreground and background features are transformed into positive and negative point prompts, 
+          enabling the Segment Anything Model (SAM) to produce precise nuclear delineations without any parameter updates.
+          Extensive experiments across multiple histopathology benchmarks demonstrate that SPROUT achieves competitive performance 
+          without supervision or retraining, establishing a novel paradigm for scalable, training-free nuclear instance segmentation in pathology.
         </p>
       </div>
     </td>
@@ -215,20 +217,19 @@ function toggleAbstract(id) {
 
 
     <tr>
-    <td width="40%" valign="top" align="center">
+    <td width="15%" valign="top" align="center">
       <a href="#">
-        <img src="images/crosslink.jpg" alt="sym" width="400" height="200" style="border-radius:15px">
+        <img src="images/crosslink.jpg" alt="sym" width="240" height="140" style="border-radius:0; margin-top:10px; margin-left:8px;">
       </a>
     </td>
 
-    <td width="50%" valign="top" class="paper-block">
-      <p>
+    <td width="85%" valign="top" class="paper-block">
         <a href="https://www.sciencedirect.com/science/article/pii/S0144861724007641#f0045">
           <heading>Triple-crosslinked double-network alginate/dextran/dendrimer hydrogel with tunable 
             mechanical and adhesive properties: A potential candidate for sutureless keratoplasty</heading>
         </a><br>
 
-        <span class="authors" style="display:block; margin-top:10px;">
+        <span class="authors" style="display:block; margin-top:8px; font-size:14px;">
           <b>Wen Zhang*</b>,
           Shujing Liu*, 
           Lixiang Wang*,
@@ -244,8 +245,9 @@ function toggleAbstract(id) {
           Jing Tang,
           Juan Wang
         </span>
-        <em>Carbohydrate Polymers Volume 344, 2024, 122538.<span style="color:#cf3689;"> (IF=12.5) </span> </em> 
-      </p>
+        <span style="font-size:14px;">
+        Carbohydrate Polymers Volume 344, 2024, 122538.<span style="color:#cf3689;"> <b>(IF=12.5)</b> </span> 
+        </span> 
 
       <div class="paper" id="crosslink">
         <span class="paper-links" >
@@ -274,26 +276,28 @@ function toggleAbstract(id) {
   </tr>
 
     <tr>
-    <td width="40%" valign="top" align="center">
+    <td width="20%" valign="top" align="center">
       <a href="#">
-        <img src="images/brain_commu.png" alt="sym" width="400" height="200" style="border-radius:15px">
+        <img src="images/brain_commu.png" alt="sym" width="240" height="100" style="border-radius:0; margin-top:4px; margin-left:8px;">
       </a>
     </td>
 
-    <td width="50%" valign="top" class="paper-block">
+    <td width="80%" valign="top" class="paper-block">
       <p>
         <a href="#">
           <heading>Hemispheric atrophy as a predictor for naming recovery following left hemisphere ischemic stroke</heading>
         </a><br>
 
-        <span class="authors" style="display:block; margin-top:10px;">
+        <span class="authors" style="display:block; margin-top:8px; font-size:14px;">
           Voss Neal,
           Andreia V. Faria,
           <b>Wen Zhang</b>,
           Argye E. Hillis,
           Melissa D. Stockbridge
         </span>
-        <em>Brain Communications (Under Review)</em>
+        <span style="font-size:14px;">
+          Brain Communications (Under Review)
+        </span>
       </p>
 
       <div class="paper" id="sprout">
@@ -310,9 +314,10 @@ function toggleAbstract(id) {
     <td>
       <sectionheading>&nbsp;&nbsp;Professional Services</sectionheading>
         <ul>
-          <li> <b>Journal Reviewer</b>: IEEE-TMI, IEEE-TNNLS, Pattern Recognition</li>
-          <li> <b>Symposium Organizer</b>: Johns Hopkins Symposium on FAIR Data and Open Science, 2025</li>
-          <li> <b>Teaching Assistant</b>: EN.530.641 Statistical Learning for Engineers (JHU), Fall 2024 </li>
+          <li> <b>Journal Reviewer</b>: IEEE-TPAMI, IEEE-TMI, IEEE-TNNLS, Pattern Recognition.</li>
+          <li> <b>Conference Reviewer</b>: ACM MM 2025, ICLR 2026.</li>
+          <li> <b>Symposium Organizer</b>: Johns Hopkins Symposium on NEXUS Fair Principles of Open Science, 2025.</li>
+          <li> <b>Teaching Assistant</b>: EN.530.641 Statistical Learning for Engineers (JHU), Fall 2024. </li>
         </ul>
     </td>
   </tr>
@@ -326,8 +331,8 @@ function toggleAbstract(id) {
           <li> <b>Experiential Learning Student Employee of the Year</b>, Johns Hopkins University, 2025</li>
           <li> <b>Outstanding Graduate</b>, Sichuan University, 2023</li>
           <li> <b>Excellent Bachelor Thesis</b>, Sichuan University, 2023</li>
-          <li> <b>Wanglaoji Scholarship</b> , Sichuan University, 2021. </li>
-          <li> <b>First Class Scholarship</b>, Sichuan University, 2020, 2021, 2022. </li>
+          <li> <b>Wanglaoji Scholarship</b> (50 students university-wide), Sichuan University, 2021. </li>
+          <li> <b>First Class Scholarship</b> (top 1%), Sichuan University, 2020, 2021, 2022. </li>
         </ul>
     </td>
   </tr>
@@ -335,8 +340,8 @@ function toggleAbstract(id) {
 
 
 <table width="960" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tr><td><br><p align="center"><font size="2">
-    Template from this <a href="https://jonbarron.info/">awesome website</a>.
+    <tr><td><br><p align="center"><font size="1">
+    Modified version of template from this <a href="https://jonbarron.info/">awesome website</a>.
     </font></p></td></tr>
     
 </table>
