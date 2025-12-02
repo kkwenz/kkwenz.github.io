@@ -53,8 +53,8 @@
   .paper-block .authors { color:#666; }
   .paper-block .authors b { color:#000; }
   .paper-links a { text-decoration:none; }
-  .paper-links a::before { content:"["; }
-  .paper-links a::after  { content:"]"; }
+  /* .paper-links a::before { content:"["; }
+  .paper-links a::after  { content:"]"; } */
   details summary { cursor:pointer; font-style:normal; }
   details[open] summary { margin-bottom:6px; }
 
@@ -110,8 +110,8 @@ function toggleAbstract(id) {
         and my bachelor's degree in Biomedical Engineering from Sichuan University in 2023.
         </p>
 
-        <p><strong>🎓 I am actively seeking a <span style="color:red; font-weight:bold;">Ph.D. position</span> 
-        for <span style="color:red; font-weight:bold;">Fall 2026</span>.</strong>
+        <p><strong>🎓 I am actively seeking a <span style="color:#D02020; font-weight:bold;">Ph.D. position</span> 
+        for <span style="color:#D02020; font-weight:bold;">Fall 2026</span>.</strong>
         <br>
         Please feel free to contact me if you believe am a good fit for your research team. 
         I would be delighted to discuss potential opportunities and collaborations.
@@ -170,7 +170,7 @@ function toggleAbstract(id) {
   <tr>
     <td width="15%" valign="top" align="center">
       <a href="#">
-        <img src="images/sprout.png" alt="sym" width="240" height="120" style="border-radius:0; margin-top:6px; margin-left:8px;">
+        <img src="images/sprout.png" alt="sym" width="240" height="115" style="border-radius:0; margin-top:6px; margin-left:8px;">
       </a>
     </td>
 
@@ -187,14 +187,14 @@ function toggleAbstract(id) {
           Chenyu You
         </span>
         <span style="font-size:14px;">
-          arXiv
+          Preprint
         </span>
 
       <div class="paper" id="sprout">
         <span class="paper-links" >
-          <a href="javascript:void(0);" onclick="toggleAbstract('sprout_ab')">abstract</a>
-          <a href="#" target="_blank">paper</a>
-          <a href="https://github.com/Y-Research-SBU/SPROUT" target="_blank">code</a>
+          <a href="javascript:void(0);" onclick="toggleAbstract('sprout_ab')">abstract</a> /
+          <a href="https://arxiv.org/abs/2511.19953" target="_blank">paper</a> /
+          <a href="https://github.com/Y-Research-SBU/SPROUT" target="_blank">code</a> 
         </span>
 
         <p id="sprout_ab" align="justify" style="display:none; margin-top:6px;">
@@ -215,67 +215,190 @@ function toggleAbstract(id) {
     </td>
   </tr>
 
-
     <tr>
     <td width="15%" valign="top" align="center">
       <a href="#">
-        <img src="images/crosslink.jpg" alt="sym" width="240" height="140" style="border-radius:0; margin-top:10px; margin-left:8px;">
+        <img src="images/scale.jpg" alt="sym" width="240" height="100" style="border-radius:0; margin-top:6px; margin-left:8px;">
       </a>
     </td>
 
     <td width="85%" valign="top" class="paper-block">
-        <a href="https://www.sciencedirect.com/science/article/pii/S0144861724007641#f0045">
-          <heading>Triple-crosslinked double-network alginate/dextran/dendrimer hydrogel with tunable 
-            mechanical and adhesive properties: A potential candidate for sutureless keratoplasty</heading>
+        <a href="#">
+          <heading>Scale Where It Matters: Training-Free Localized Scaling for Diffusion Models</heading>
         </a><br>
 
-        <span class="authors" style="display:block; margin-top:8px; font-size:14px;">
-          <b>Wen Zhang*</b>,
-          Shujing Liu*, 
-          Lixiang Wang*,
-          Boxuan Li,
-          Mengzhen Xie,
-          Yingping Deng,
-          Jialuo Zhang,
-          Huazhang Zeng,
-          Li Qiu,
-          Lisha Huang,
-          Tao Gou,
-          Xiaobo Cen, 
-          Jing Tang,
-          Juan Wang
+        <span class="authors" style="display:block; margin-top:8px;font-size:14px;">
+          Qin Ren,
+          Yufei Wang,
+          Lanqing Guo,
+          <b>Wen Zhang</b>,
+          Zhiwen Fan,
+          Chenyu You
         </span>
         <span style="font-size:14px;">
-        Carbohydrate Polymers Volume 344, 2024, 122538.<span style="color:#cf3689;"> <b>(IF=12.5)</b> </span> 
-        </span> 
-
-      <div class="paper" id="crosslink">
-        <span class="paper-links" >
-          <a href="javascript:void(0);" onclick="toggleAbstract('crosslink_ab')">abstract</a>
-          <a href="https://www.sciencedirect.com/science/article/pii/S0144861724007641#f0045" target="_blank">paper</a>
+          Preprint
         </span>
 
-        <p id="crosslink_ab" align="justify" style="display:none; margin-top:6px;">
-        An ideal adhesive hydrogel must possess high adhesion to the native tissue, biocompatibility, eligible biodegradability, 
-        and good mechanical compliance with the substrate tissues. We constructed an interpenetrating double-network 
-        hydrogel containing polysaccharides (alginate and dextran) and nanosized spherical dendrimer by both physical and chemical crosslinking, 
-        thus endowing the hydrogel with a broad range of mechanical properties, adhesive properties, and biological functions. 
-        The double-network hydrogel has moderate pore sizes and swelling properties. 
-        The chelation of calcium ions significantly enhances the tensile and compressive properties. 
-        The incorporation of dendrimer improves both the mechanical and adhesive properties. 
-        This multicomponent interpenetrating network hydrogel has excellent biocompatibility, tunable mechanical and adhesive properties, 
-        and satisfied multi-functions to meet the complex requirements of wound healing and tissue engineering. 
-        The hydrogel exhibits promising corneal adhesion capabilities in vitro, potentially supplanting t
-        he need for sutures in corneal stromal surgery and mitigating the risks associated with donor corneal damage and graft rejection during corneal transplantation. 
-        This novel polysaccharide and dendrimer hydrogel also shows good results in sutureless keratoplasty, with high efficiency and reliability. 
-        Based on the clinical requirements for tissue bonding and wound closure, 
-        the hydrogel provides insight into solving the mechanical properties and adhesive strength of tissue adhesives.
+      <div class="paper" id="scale">
+        <span class="paper-links" >
+          <a href="javascript:void(0);" onclick="toggleAbstract('scale_ab')">abstract</a> /
+          <a href="https://arxiv.org/abs/2511.19917" target="_blank">paper</a> /
+          <a href="" target="_blank">code</a> 
+        </span>
+
+        <p id="scale_ab" align="justify" style="display:none; margin-top:6px;">
+          Diffusion models have become the dominant paradigm in
+          text-to-image generation, and test-time scaling (TTS) further improves quality by allocating more computation during inference. 
+          However, existing TTS methods operate at the full-image level, overlooking the fact that image quality is often spatially heterogeneous. 
+          This leads to unnecessary computation on already satisfactory regions and insufficient correction of localized defects. 
+          In this paper, we explore a new direction - Localized TTS - that adaptively resamples defective regions while preserving high-quality regions, 
+          thereby substantially reducing the search space. This paradigm poses two central challenges: accurately localizing defects and maintaining global consistency. 
+          We propose LoTTS, the first fully training-free framework for localized TTS. 
+          For defect localization, LoTTS contrasts cross-/selfattention signals under quality-aware prompts (e.g., “highquality” vs. “low-quality”) to identify defective regions,
+          and then refines them into coherent masks. For consistency, LoTTS perturbs only defective regions and denoises them locally, 
+          ensuring that corrections remain confined while the rest of the image remains undisturbed. Extensive experiments on SD2.1, SDXL, 
+          and FLUX demonstrate that LoTTS achieves state-of-the-art performance: 
+          it consistently improves both local quality and global fidelity, while reducing GPU cost by 2-4 × compared to Best-of-N sampling.
+          These findings establish localized TTS as a promising new direction for scaling diffusion models at inference time.
         </p>
       </div>
     </td>
   </tr>
 
-    <tr>
+
+  <tr>
+    <td width="15%" valign="top" align="center">
+      <a href="#">
+        <img src="images/TTA.jpg" alt="sym" width="240" height="125" style="border-radius:0; margin-top:4px; margin-left:8px;">
+      </a>
+    </td>
+
+    <td width="85%" valign="top" class="paper-block">
+        <a href="#">
+          <heading>Together, Then Apart: Revisiting Multimodal Survival Analysis via a Min–Max Perspective</heading>
+        </a><br>
+
+        <span class="authors" style="display:block; margin-top:8px;font-size:14px;">
+          Wenjing Liu,
+          Qin Ren,
+          <b>Wen Zhang</b>,
+          Yuewei Lin,
+          Chenyu You
+        </span>
+        <span style="font-size:14px;">
+          Preprint
+        </span>
+
+      <div class="paper" id="TTA">
+        <span class="paper-links" >
+          <a href="javascript:void(0);" onclick="toggleAbstract('tta_ab')">abstract</a> /
+          <a href="https://arxiv.org/abs/2511.18089" target="_blank">paper</a> /
+          <a href="" target="_blank">code</a> 
+        </span>
+
+        <p id="tta_ab" align="justify" style="display:none; margin-top:6px;">
+          Integrating heterogeneous modalities such as histopathology and genomics is central to advancing survival analysis, 
+          yet most existing methods prioritize cross-modal alignment through attention-based fusion mechanisms, 
+          often at the expense of modality-specific characteristics. 
+          This overemphasis on alignment leads to representation collapse and reduced diversity. 
+          In this work, we revisit multi-modal survival analysis via the dual lens of 
+          alignment and distinctiveness, positing that preserving modality-specific structure is as vital as achieving semantic coherence.
+          In this paper, we introduce Together-Then-Apart (TTA), a unified min–max optimization framework that simultaneously models shared and modality-specific representations. 
+          The Together stage minimizes semantic discrepancies by aligning embeddings via shared prototypes, 
+          guided by an unbalanced optimal transport objective that adaptively highlights informative tokens. 
+          The Apart stage maximizes representational diversity through modality anchors and a contrastive regularizer that preserve unique modality information and prevent feature collapse.
+          Extensive experiments on five TCGA benchmarks show that TTA consistently outperforms state-of-the-art methods. 
+          Beyond empirical gains, our formulation provides a new theoretical perspective of how alignment and distinctiveness can be jointly achieved in for robust, interpretable, 
+          and biologically meaningful multi-modal survival analysis. 
+        </p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="15%" valign="top" align="center">
+      <a href="#">
+        <img src="images/SPOT.jpg" alt="sym" width="240" height="115" style="border-radius:0; margin-top:6px; margin-left:8px;">
+      </a>
+    </td>
+
+    <td width="85%" valign="top" class="paper-block">
+        <a href="#">
+          <heading>SPOT: CAM-Guided Optimal Transport for Weakly Supervised Semantic Segmentation</heading>
+        </a><br>
+
+        <span class="authors" style="display:block; margin-top:8px;font-size:14px;">
+          Bingqin Wang*,
+          Qin Ren*,
+          <b>Wen Zhang*</b>,
+          Yuting He,
+          Zhiwen Fan,
+          Chenyu You
+        </span>
+        <span style="font-size:14px;">
+          Preprint
+        </span>
+
+      <div class="paper" id="sprout">
+        <span class="paper-links" >
+          <a href="javascript:void(0);" onclick="toggleAbstract('spot_ab')">abstract</a> /
+          <a href="" target="_blank">paper</a> /
+          <a href="" target="_blank">code</a> 
+        </span>
+
+        <p id="spot_ab" align="justify" style="display:none; margin-top:6px;">
+          Weakly Supervised Semantic Segmentation (WSSS) relies on Class Activation Maps (CAMs) to extract spatial cues from image-level labels.
+          However, CAMs tend to focus on the most distinctive object parts, leaving large regions under-explored and resulting in incomplete, 
+          spatially fragmented pseudo-labels. Prior work attempts to improve performance through prototype learning or CAM aggregation, 
+          but such methods lack explicit modeling of the global pixel–class distribution and rely on rigid marginal-constraint 
+          formulations that tend to collapse under large intra-class variation. We introduce SPOT, 
+          a simple yet effective framework that formulates pseudo-label generation as CAM-guided optimal transport (OT) over dense features extracted from a pretrained visual encoder.
+          SPOT enforces soft CAM marginals to derive a global pixel-to-class assignment, 
+          progressively refining pseudo-labels into more accurate and spatially coherent segmentations while suppressing noise.
+          SPOT handles ambiguous pixels through a gradual reallocation process, guiding uncertain regions toward confident classes under an annealed schedule, 
+          leading to more stable and semantically consistent supervision. SPOT further enhances spatial coherence by clustering the evolving pseudo-labels with k-means, 
+          merging fragmented activations into coherent object regions. A multi-scale OT formulation improves efficiency, 
+          accelerating label generation without compromising accuracy. We achieve a notable performance gain on PASCAL VOC (+6.8%) and MS COCO (+3.2%) compared to seminal baselines, 
+          demonstrating the effectiveness of our SPOT. Our framework opens up new possibilities for optimal transport to achieve globally consistent supervision under limited labels.
+        </p> 
+      </div>
+    </td>
+  </tr>
+
+      <tr>
+    <td width="20%" valign="top" align="center">
+      <a href="#">
+        <img src="images/ISMRM.png" alt="sym" width="240" height="95" style="border-radius:0; margin-top:6px; margin-left:8px;">
+      </a>
+    </td>
+
+    <td width="80%" valign="top" class="paper-block">
+      <p>
+        <a href="#">
+          <heading>Automated Prediction of Domain-Specific NIHSS from MRI Using Machine Learning for Acute Stroke Assessment</heading>
+        </a><br>
+
+        <span class="authors" style="display:block; margin-top:8px; font-size:14px;">          
+          <b>Wen Zhang</b>,
+          Shun Liu,
+          Andreia V. Faria,
+        </span>
+        <span style="font-size:14px;">
+          ISMRM 2026
+        </span>
+      </p>
+
+      <div class="paper" id="sprout">
+        <span class="paper-links" >
+        </span>
+
+        </p>
+      </div>
+    </td>
+  </tr>
+  
+  
+  <tr>
     <td width="20%" valign="top" align="center">
       <a href="#">
         <img src="images/brain_commu.png" alt="sym" width="240" height="100" style="border-radius:0; margin-top:4px; margin-left:8px;">
@@ -309,14 +432,75 @@ function toggleAbstract(id) {
     </td>
   </tr>
 
+    <tr>
+    <td width="15%" valign="top" align="center">
+      <a href="#">
+        <img src="images/crosslink.jpg" alt="sym" width="240" height="140" style="border-radius:0; margin-top:10px; margin-left:8px;">
+      </a>
+    </td>
+
+    <td width="85%" valign="top" class="paper-block">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0144861724007641#f0045">
+          <heading>Triple-crosslinked double-network alginate/dextran/dendrimer hydrogel with tunable 
+            mechanical and adhesive properties: A potential candidate for sutureless keratoplasty</heading>
+        </a><br>
+
+        <span class="authors" style="display:block; margin-top:8px; font-size:14px;">
+          <b>Wen Zhang*</b>,
+          Shujing Liu*, 
+          Lixiang Wang*,
+          Boxuan Li,
+          Mengzhen Xie,
+          Yingping Deng,
+          Jialuo Zhang,
+          Huazhang Zeng,
+          Li Qiu,
+          Lisha Huang,
+          Tao Gou,
+          Xiaobo Cen, 
+          Jing Tang,
+          Juan Wang
+        </span>
+        <span style="font-size:14px;">
+        Carbohydrate Polymers Volume 344, 2024, 122538.<span style="color:D02020;"> <b>(IF=12.5)</b> </span> 
+        </span> 
+
+      <div class="paper" id="crosslink">
+        <span class="paper-links" >
+          <a href="javascript:void(0);" onclick="toggleAbstract('crosslink_ab')">abstract</a> /
+          <a href="https://www.sciencedirect.com/science/article/pii/S0144861724007641#f0045" target="_blank">paper</a>
+        </span>
+
+        <p id="crosslink_ab" align="justify" style="display:none; margin-top:6px;">
+        An ideal adhesive hydrogel must possess high adhesion to the native tissue, biocompatibility, eligible biodegradability, 
+        and good mechanical compliance with the substrate tissues. We constructed an interpenetrating double-network 
+        hydrogel containing polysaccharides (alginate and dextran) and nanosized spherical dendrimer by both physical and chemical crosslinking, 
+        thus endowing the hydrogel with a broad range of mechanical properties, adhesive properties, and biological functions. 
+        The double-network hydrogel has moderate pore sizes and swelling properties. 
+        The chelation of calcium ions significantly enhances the tensile and compressive properties. 
+        The incorporation of dendrimer improves both the mechanical and adhesive properties. 
+        This multicomponent interpenetrating network hydrogel has excellent biocompatibility, tunable mechanical and adhesive properties, 
+        and satisfied multi-functions to meet the complex requirements of wound healing and tissue engineering. 
+        The hydrogel exhibits promising corneal adhesion capabilities in vitro, potentially supplanting t
+        he need for sutures in corneal stromal surgery and mitigating the risks associated with donor corneal damage and graft rejection during corneal transplantation. 
+        This novel polysaccharide and dendrimer hydrogel also shows good results in sutureless keratoplasty, with high efficiency and reliability. 
+        Based on the clinical requirements for tissue bonding and wound closure, 
+        the hydrogel provides insight into solving the mechanical properties and adhesive strength of tissue adhesives.
+        </p>
+      </div>
+    </td>
+  </tr>
+
+
+
 <table width="960" align="center" border="0" cellpadding="10">
   <tr>
     <td>
       <sectionheading>&nbsp;&nbsp;Professional Services</sectionheading>
         <ul>
-          <li> <b>Journal Reviewer</b>: IEEE-TPAMI, IEEE-TMI, IEEE-TNNLS, Pattern Recognition.</li>
+          <li> <b>Journal Reviewer</b>: IEEE-TPAMI, IEEE-TMI, IEEE-TNNLS, TMLR, Pattern Recognition.</li>
           <li> <b>Conference Reviewer</b>: ACM MM 2025, ICLR 2026.</li>
-          <li> <b>Symposium Organizer</b>: Johns Hopkins Symposium on NEXUS Fair Principles of Open Science, 2025.</li>
+          <li> <b>Symposium Organizer</b>: Johns Hopkins Symposium on NEXUS Fair Principles of Open Science, DC, 2025.</li>
           <li> <b>Teaching Assistant</b>: EN.530.641 Statistical Learning for Engineers (JHU), Fall 2024. </li>
         </ul>
     </td>
