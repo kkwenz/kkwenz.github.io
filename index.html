@@ -317,55 +317,6 @@ function toggleAbstract(id) {
     </td>
   </tr>
 
-  <tr>
-    <td width="15%" valign="top" align="center">
-      <a href="#">
-        <img src="images/SPOT.jpg" alt="sym" width="240" height="115" style="border-radius:0; margin-top:6px; margin-left:8px;">
-      </a>
-    </td>
-
-    <td width="85%" valign="top" class="paper-block">
-        <a href="#">
-          <heading>SPOT: CAM-Guided Optimal Transport for Weakly Supervised Semantic Segmentation</heading>
-        </a><br>
-
-        <span class="authors" style="display:block; margin-top:8px;font-size:14px;">
-          Bingqin Wang*,
-          Qin Ren*,
-          <b>Wen Zhang*</b>,
-          Yuting He,
-          Zhiwen Fan,
-          Chenyu You
-        </span>
-        <span style="font-size:14px;">
-          Preprint
-        </span>
-
-      <div class="paper" id="sprout">
-        <span class="paper-links" >
-          <a href="javascript:void(0);" onclick="toggleAbstract('spot_ab')">abstract</a> /
-          <a href="" target="_blank">paper</a> /
-          <a href="" target="_blank">code</a> 
-        </span>
-
-        <p id="spot_ab" align="justify" style="display:none; margin-top:6px;">
-          Weakly Supervised Semantic Segmentation (WSSS) relies on Class Activation Maps (CAMs) to extract spatial cues from image-level labels.
-          However, CAMs tend to focus on the most distinctive object parts, leaving large regions under-explored and resulting in incomplete, 
-          spatially fragmented pseudo-labels. Prior work attempts to improve performance through prototype learning or CAM aggregation, 
-          but such methods lack explicit modeling of the global pixel–class distribution and rely on rigid marginal-constraint 
-          formulations that tend to collapse under large intra-class variation. We introduce SPOT, 
-          a simple yet effective framework that formulates pseudo-label generation as CAM-guided optimal transport (OT) over dense features extracted from a pretrained visual encoder.
-          SPOT enforces soft CAM marginals to derive a global pixel-to-class assignment, 
-          progressively refining pseudo-labels into more accurate and spatially coherent segmentations while suppressing noise.
-          SPOT handles ambiguous pixels through a gradual reallocation process, guiding uncertain regions toward confident classes under an annealed schedule, 
-          leading to more stable and semantically consistent supervision. SPOT further enhances spatial coherence by clustering the evolving pseudo-labels with k-means, 
-          merging fragmented activations into coherent object regions. A multi-scale OT formulation improves efficiency, 
-          accelerating label generation without compromising accuracy. We achieve a notable performance gain on PASCAL VOC (+6.8%) and MS COCO (+3.2%) compared to seminal baselines, 
-          demonstrating the effectiveness of our SPOT. Our framework opens up new possibilities for optimal transport to achieve globally consistent supervision under limited labels.
-        </p> 
-      </div>
-    </td>
-  </tr>
 
       <tr>
     <td width="20%" valign="top" align="center">
