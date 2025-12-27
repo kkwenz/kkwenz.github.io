@@ -70,7 +70,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #cf3689;
   text-decoration: none;
 }
 
@@ -81,12 +81,26 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 800
+}
+
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+pageheading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;;
+  font-size: 38px;
+  font-weight: 400;
 }
 
 h2 {
@@ -94,6 +108,12 @@ h2 {
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+}
+
+sectionheading {
+  font-family: Calibri, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600
 }
 
 .papertitle {
@@ -140,3 +160,9 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.paper-block .authors { color:#666; }
+.paper-block .authors b { color:#000; }
+.paper-links a { text-decoration:none; }
+details summary { cursor:pointer; font-style:normal; }
+details[open] summary { margin-bottom:6px; }
